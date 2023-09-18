@@ -4,8 +4,12 @@ passwd = password
 emails = ["list","of","addressess"]
 for email in emails:
     sender_email = "<replace with sender_email address"
+    sender_display_name = "<Desired Display Name>"
     receiver_email = email
+    reply_to_email = "<replace with reply-to email address>"
     message = f"""Subject: Example
+    From: {sender_display_name} <{sender_email}>
+    Reply-To: {reply_to_email}
       
     Body text to {email} goes here. 
     """
