@@ -4,10 +4,10 @@ This takes an array of e-mail addresses, and sends an e-mail to each, while also
 I.e. an organization has multiple e-mail formats, for various reasons. Legacy names, etc. xyz@example.com, and x.y.z@example.com. 
 
 # How to use
-In email.py, you need to update the e-mails array with your list of addresses, update the name of the SMTP server you wish to use, and fillout the message body and subject. 
-
-In smtp_secret.py, add you credentials. 
-
+Update email_list.py with a list of e-mails you wish to send in the form of an array. 
+Update the name of the Subject and SMTP server you wish to use in email_send.py, 
+Update the message body in message.py. 
+In smtp_secret.py, add you credentials. It is already in gitignore.  
 
 # Example Output
 
