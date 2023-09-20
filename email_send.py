@@ -1,15 +1,15 @@
 import smtplib
 from smtp_secret import password
+from email_list import emails
+from message import messagebody
 passwd = password
 # Set up email details
 sender_email = "send as address"
 sender_display_name = "Display name" # replace with your desired display name
 reply_to_email = "<reply to address"
 subject = "Example TEST"
-emails = ["usera@example.com","userb@example.com"]
 for email in emails:
-    body = f"Body text to {email} goes here."
-
+    body = messagebody
     message_parts = [
         f"Subject: {subject}",
         f"From: {sender_display_name} <{sender_email}>",
