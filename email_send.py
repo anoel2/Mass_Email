@@ -18,7 +18,7 @@ for email in emails:
         "",
         body,
     ]
-    message = "\n".join(message_parts)
+    message = "\n".join(message_parts).encode("utf8")
 
     try:
         with smtplib.SMTP("smtp.office365.com", 587) as server:
